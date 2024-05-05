@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SCIENTIFIC CALCULATOR</title>
+</head>
+<body>
+    <div id="container">
+        <div id="result">
+            <input type="text" id="res" placeholder="0">
+        </div>
+        <div class="btns">
+        <div class="btn">
+            <button type="text" id="ce" onclick="res.value=res.value.slice(0,-1)" >CE</button>
+            <button type="text" onclick="fact()" >x!</button>
+            <button type="text" onclick="res.value+='('" >(</button>
+            <button type="text" onclick="res.value+=')'" >)</button>
+            <button type="text" onclick="res.value+='%'" >%</button>
+            <button type="text" id="ac" onclick="res.value=' '">AC</button>
+        </div>
+        <div class="btn">
+            <button type="text" onclick="res.value=Math.sin(res.value).toFixed(8)">sin</button>
+            <button type="text" onclick="res.value+=(Math.PI).toFixed(8)">π</button>
+            <button type="text" onclick="res.value+=7" >7</button>
+            <button type="text" onclick="res.value+=8" >8</button>
+            <button type="text" onclick="res.value+=9" >9</button>
+            <button type="text" onclick="res.value+='/'">÷</button>
+        </div>
+        <div class="btn">
+            <button type="text" onclick="res.value=Math.cos(res.value).toFixed(8)">cos</button>
+            <button type="text" onclick="res.value=Math.log(res.value).toFixed(8)">log</button>
+            <button type="text" onclick="res.value+=4" >4</button>
+            <button type="text" onclick="res.value+=5" >5</button>
+            <button type="text" onclick="res.value+=6" >6</button>
+            <button type="text" onclick="res.value+='*'">x</button>
+        </div>
+        <div class="btn"> 
+            <button type="text" onclick="res.value=Math.tan(res.value).toFixed(8)">tan</button>
+            <button type="text" onclick="res.value=Math.sqrt(res.value).toFixed(8)">√</button>
+            <button type="text" onclick="res.value+=1" >1</button>
+            <button type="text" onclick="res.value+=2" >2</button>
+            <button type="text" onclick="res.value+=3" >3</button>
+            <button type="text" onclick="res.value+='-'">-</button>
+        </div>
+        <div class="btn">
+            <button type="text" onclick="res.value+=(Math.E).toFixed(8)">e</button>
+            <button type="text" onclick="res.value+='^'">x<sup style="position:relative;bottom:.1px; right:.1px;">y</sup></button>
+            <button type="text" onclick="res.value+=0" >0</button>
+            <button type="text" onclick="res.value+='.'">.</button>
+            <button type="text" id="eq" onclick="calc()" >=</button>
+            <button type="text" onclick="res.value+='+'" >+</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
